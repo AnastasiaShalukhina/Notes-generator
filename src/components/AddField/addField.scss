@@ -1,0 +1,57 @@
+.addField__wrapper {
+  max-width: 60%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.addField__legend {
+  margin: 30px 0;
+  font-size: 3.2rem;
+  color: #9d8189;
+}
+
+.addField__tools {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.addField__image {
+  width: 20px;
+  height: auto;
+}
+
+.addField__field {
+  width: 70%;
+  min-height: 100px;
+  margin-top: 15px;
+  font-size: 2.0rem;
+  padding: 7px;
+  resize: none;
+  border: 2px solid #9d8189;
+  border-radius: 8px;
+
+  &:focus {
+    outline: 1px solid #b56576;
+  }
+}
+
+.addField__button {
+  display: block;
+  width: 100px;
+  background-color: #cbf3f0;
+  padding: 10px;
+  border: none;
+  border: 1px solid #9d8189;
+  border-radius: 7px;
+  color: #4361ee;
+  transition: all ease .3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #83c5be;
+    color: #b56576;
+    border: 1px solid #b56576;
+  }
+}
