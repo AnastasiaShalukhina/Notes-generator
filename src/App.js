@@ -1,5 +1,6 @@
 import React from "react";
 import AddField from "./components/AddField/AddField";
+import NotesList from "./components/NotesList/NotesList";
 
 class App extends React.Component {
 
@@ -18,11 +19,14 @@ class App extends React.Component {
   }
 
   render() {
+
+    const data = this.state.data; // [{}, {} ... {}]
+
     return (
       <div>
         <AddField />
         <div className="notes-container">
-
+          <NotesList data={data} />
         </div>
       </div>
     )
