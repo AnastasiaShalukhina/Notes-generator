@@ -8,6 +8,7 @@ class NotesList extends React.Component {
       const { id, ...noteProps } = note;
       return <Note
         key={id}
+        onDelete={() => this.props.onDelete(id)}
         {...noteProps}
       />
     })

@@ -18,15 +18,39 @@ class App extends React.Component {
     this.maxId = 2
   }
 
+  addNote = (text) => {
+    const newNote = {
+      text: text,
+      id: this.maxId++,
+    }
+
+    this.setState(({ data }) => {
+      const newData = [...data, newNote]
+      return {
+        data: newData
+      }
+    })
+  }
+
+  deleteNote = (id) => {
+    this.setState(({ data }) => {
+      return {
+        data: data.filter((note) => note.id !== id)
+      }
+    })
+  }
+
   render() {
 
     const data = this.state.data; // [{}, {} ... {}]
 
     return (
       <div>
-        <AddField />
+        <AddField onAdd={this.addNote} />
         <div className="notes-container">
-          <NotesList data={data} />
+          <NotesList
+            data={data}
+            onDelete={this.deleteNote} />
         </div>
       </div>
     )

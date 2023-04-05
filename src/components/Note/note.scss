@@ -1,0 +1,44 @@
+.note {
+  font-size: 1.6rem;
+  list-style-type: circle;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px dashed #ccd5ae;
+  border-radius: 10px;
+}
+
+.note__btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.note__btn {
+  width: 100px;
+  margin-top: 5px;
+  padding: 7px;
+  background-color: #bde0fe;
+  border: 1px solid #a2d2ff;
+  border-radius: 5px;
+  transition: all ease .3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #a2d2ff;
+    border: 1px solid #0077b6;
+  }
+}
+
+.note__btn_colored {
+  background-color: #e63946;
+  border: 1px solid #ef233c;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: all ease .3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ef233c;
+    border: 1px solid #6a040f;
+  }
+}
